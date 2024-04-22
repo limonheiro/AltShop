@@ -1,4 +1,4 @@
-const formulario = document.querySelector("#formulario")
+const formulario = document.querySelector("#formulario_adicionar")
 const removerProduto = document.querySelector('#formulario_remover')
 
 const adicionar = document.querySelector(".adicionar")
@@ -13,7 +13,7 @@ remover.addEventListener('click', () => {
     removerProduto.style.display = 'flex'
     formulario.style.display = 'none'
  })
- 
+
 formulario.addEventListener('submit', async function (event) {
     event.preventDefault()
 
@@ -24,7 +24,7 @@ formulario.addEventListener('submit', async function (event) {
 
     const novoProduto = {
         'nome': nome.value,
-        'image': image.value,
+        'image': [image.value],
         "preço": preco.value,
         "quantidade": quantidade.value
     }
