@@ -14,6 +14,17 @@ nav{
     width: 80%;
 }
 
+nav a{
+    text-decoration: none;
+    color: #000;
+    transition-duration: 400ms;
+}
+
+nav *:hover{
+    transition-duration: 400ms;
+    transform: translate(0.2rem, 1%);
+}
+
 h1{
     font-family: "Public Sans";
     font-size: 2rem;

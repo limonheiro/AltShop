@@ -1,14 +1,3 @@
-nav a{
-    text-decoration: none;
-    color: #000;
-    transition-duration: 400ms;
-}
-
-nav *:hover{
-    transition-duration: 400ms;
-    transform: translate(0.2rem, 1%);
-}
-
 .escolha_container{
     display: flex;
     padding: 1rem;
@@ -52,7 +41,6 @@ nav *:hover{
     flex-direction: column;
     align-content: center;
     justify-content: center;
-    padding-top: 1rem;
     padding-bottom: 1rem;
 }
 
@@ -100,4 +88,8 @@ nav *:hover{
 .remover:hover{
     background: #ff0000;
     color: #fff;
+}
+
+#formulario, #formulario_remover{
+    display: 'none';
 }

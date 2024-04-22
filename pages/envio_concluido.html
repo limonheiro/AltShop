@@ -38,11 +38,11 @@
         </div>
         
         <div class="formulario">
-            
+            <h1>Adicionar Produto</h1>
             <form class="formulario_container" id="formulario" action="/" method="post" data-adicionar>
-                <h1>Adicionar Produto</h1>
-                <label class="campo__etiqueta" for="nome">Nome do Produto</label>
-                <input class="campo__escrita arredondar" type="text" name="nome" id="nome" placeholder="Nome do produto"><br>
+
+                <label class="campo__etiqueta" for="titulo">Titulo</label>
+                <input class="campo__escrita arredondar" type="text" name="titulo" id="titulo" placeholder="Titulo do produto"><br>
 
                 <label class="campo__etiqueta" for="image">Link da imagem</label>
                 <input class="campo__escrita arredondar" type="text" name="image" id="image" placeholder="Link da imagem"><br>
@@ -52,14 +52,13 @@
 
                 <label class="campo__etiqueta" for="quantidade">Quantidade</label>
                 <input class="campo__escrita arredondar" type="text" name="quantidade" id="quantidade" placeholder="Quantidade"><br>
-                <button class="formulario__botao arredondar" type="submit">Enviar</button>
+                <button class="formulario__botao arredondar" type="submit">Submit</button>
             </form>
         </div>
 
         <div class="formulario">
-            
-            <form class="formulario_container" id="formulario_remover" action="/" method="post" data-adicionar>
-                <h1>Remover Produto</h1>
+            <h1>Remover Produto</h1>
+            <form class="formulario_container" id="formulario" action="/" method="post" data-adicionar>
                 <label class="campo__etiqueta" for="id-produto">Código do produto</label>
                 <input class="campo__escrita arredondar" type="text" name="id-produto" id="id-produto" placeholder="Código do produto"><br>
                 <button class="remover formulario__botao arredondar" type="submit">Remover</button>
