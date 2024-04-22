@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../script/main.js" type="module" defer></script>
+    <script src="../script/select_product.js" type="module" defer></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <link rel="shortcut icon" href="../assets/icon.webp" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/product.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/formulario.css">
+    <title>LT</title>
+</head>
+
+<body>
+    <nav class="nav__container">
+        <div class="home"><i class="icon_nav" data-lucide="menu"></i></div>
+        <a href="../index.html"><h1>ALT</h1></a>
+        <div class="carrinho"><i class="icon_nav" data-lucide="shopping-cart"></i></div>
+        <div class="quantidade">
+            <p>1</p>
+        </div>
+    </nav>
+    <div class="main_container formulario_pagina">
+        <div class="escolha_container">
+            <button class="arredondar adicionar">Adicionar</button>
+            <button class="arredondar remover">Remover</button>
+        </div>
+        
+        <div class="formulario">
+            <h1>Adicionar Produto</h1>
+            <form class="formulario_container" id="formulario" action="/" method="post" data-adicionar>
+
+                <label class="campo__etiqueta" for="titulo">Titulo</label>
+                <input class="campo__escrita arredondar" type="text" name="titulo" id="titulo" placeholder="Titulo do produto"><br>
+
+                <label class="campo__etiqueta" for="image">Link da imagem</label>
+                <input class="campo__escrita arredondar" type="text" name="image" id="image" placeholder="Link da imagem"><br>
+
+                <label class="campo__etiqueta" for="preço">preço</label>
+                <input class="campo__escrita arredondar" type="text" name="preço" id="preço" placeholder="Preço do Produto"><br>
+
+                <label class="campo__etiqueta" for="quantidade">Quantidade</label>
+                <input class="campo__escrita arredondar" type="text" name="quantidade" id="quantidade" placeholder="Quantidade"><br>
+                <button class="formulario__botao arredondar" type="submit">Submit</button>
+            </form>
+        </div>
+
+        <div class="formulario">
+            <h1>Remover Produto</h1>
+            <form class="formulario_container" id="formulario" action="/" method="post" data-adicionar>
+                <label class="campo__etiqueta" for="id-produto">Código do produto</label>
+                <input class="campo__escrita arredondar" type="text" name="id-produto" id="id-produto" placeholder="Código do produto"><br>
+                <button class="remover formulario__botao arredondar" type="submit">Remover</button>
+            </form>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>da like</p>
+    </footer>
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>

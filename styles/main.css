@@ -1,0 +1,13 @@
+.main_container{
+    margin: auto;
+    display: flex;
+    width: 80%;
+    /* height: 80vh; */
+    justify-content: center;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    background: #fff;
+    border-radius: 16px;
+    border: 5px solid #000;
+    box-shadow: inset -4px -6px #000, inset -4px -6px #000;
+}

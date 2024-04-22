@@ -1,0 +1,14 @@
+footer{
+    display: flex;
+    width: 80%;
+    height: 80px;
+    background: #fff;
+    margin: auto;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    border-radius: 16px;
+    margin-top: 0.5rem;
+    border: 5px solid #000;
+    box-shadow: inset -4px -6px #000, inset -4px -6px #000;
+}

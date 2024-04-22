@@ -1,0 +1,58 @@
+body{
+    background: #ffff00;
+    height: 100%;
+}
+
+.home a{
+    text-decoration: none;
+    color: #000;
+}
+
+nav{
+    background: #fff;
+    height: 80px;
+    width: 80%;
+}
+
+h1{
+    font-family: "Public Sans";
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.nav__container{
+    /* min-height: 100%; */
+    margin: auto;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    border-radius: 16px;
+    margin-top: 0.5rem;
+    border: 5px solid #000;
+    box-shadow: inset -4px -6px #000, inset -4px -6px #000;
+    /* overflow:hidden; */
+}
+
+.icon_nav{
+    width: 32px;
+    height: 32px;
+}
+
+.quantidade{
+    font-family: "Public Sans";
+    font-weight: 800;
+    display: none;
+    position: absolute;
+    left: 77%;
+    top: 25px;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    border: 1px solid #000;
+    background-color: #daf5f0;
+}
+
+.quantidade p{
+    text-align: center;
+}
