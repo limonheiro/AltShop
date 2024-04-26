@@ -1,0 +1,15 @@
+@media screen and (max-width:730px) {
+    .formulario_pagina {
+        width: 90%;
+    }
+
+    .formulario_container {
+        width: 90%;
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
+
+    .campo__escrita {
+        width: 90%;
+    }
+}
