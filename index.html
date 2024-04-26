@@ -4,9 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script/main.js" type="module" defer></script>
+
+    <!-- <script src="script/formulario.js" type="module" defer></script> -->
+
     <script src="script/select_product.js" type="module" defer></script>
     <script src="script/carinho.js" defer></script>
+    <script src="script/excluir.js" type="module" defer></script>
+    <script src="script/excluir_produto.js" type="module" defer></script>
+    <script src="script/main.js" type="module" defer></script>
+<!-- fim script -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"rel="stylesheet">
@@ -37,15 +43,6 @@
                         <p>$ 30</p>
                     </div>
                 </div>
-                <!-- <div class="products_carrinho">
-                    <div class="product_carrinho">
-                        <img  src="assets/carcaça.webp" alt="">
-                        <div class="describe_product_popup">
-                            <p>Cartucho</p>
-                            <p>$ 30</p>
-                        </div>
-                    </div>
-                </div> -->
             </div>
             
             <div class="preco_carrinho">
@@ -60,6 +57,9 @@
                     <p>Cartucho</p>
                     <p>$ 30</p>
                 </div>
+                <div class="deletar_produto">
+                    <i data-lucide="trash-2" class="delete_icon"></i>
+                </div>
             </div>
         </div>
     </div>
@@ -68,10 +68,12 @@
         <p>Desenvolvido por <strong>Nicolas T.</strong></p>
         <p><strong>2024</strong></p>
     </footer>
+
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>
         lucide.createIcons();
     </script>
+    
 </body>
 
 </html>

@@ -9,8 +9,7 @@ if (localStorage.getItem('carrinho')) {
 }
 
 export default function setProdutoCarrinho() {
-
-
+    
     const produtos = document.querySelectorAll('.product')
     produtos.forEach(produto => {
         produto.addEventListener('click', () => {
@@ -18,11 +17,8 @@ export default function setProdutoCarrinho() {
             produtosIdCarrinho[produto.getAttribute('data-code')] ? produtosIdCarrinho[produto.getAttribute('data-code')] += 1 : produtosIdCarrinho[produto.getAttribute('data-code')] = 1
 
             popUpCarrinho()
-
-
-
+        
         })
-
     });
 }
 

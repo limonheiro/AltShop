@@ -1,0 +1,40 @@
+{
+  "produtos": [
+    {
+      "id": 1,
+      "nome": "cartucho SNES",
+      "image": [
+        "./assets/carcaça.webp"
+      ],
+      "preço": "30",
+      "quantidade": "15"
+    },
+    {
+      "id": 2,
+      "nome": "cartucho Mega Drive",
+      "image": [
+        "./assets/megaDrive.webp"
+      ],
+      "preço": "30",
+      "quantidade": "50"
+    },
+    {
+      "id": 3,
+      "nome": "cartucho Master System",
+      "image": [
+        "./assets/Master-system.webp"
+      ],
+      "preço": "25",
+      "quantidade": "15"
+    },
+    {
+      "id": 4,
+      "nome": "carcaça de Nintendo 64",
+      "image": [
+        "./assets/n64-trans.webp"
+      ],
+      "preço": "364",
+      "quantidade": "15"
+    }
+  ]
+}

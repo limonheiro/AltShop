@@ -1,3 +1,9 @@
+import excluirProduto from "../script/excluir_produto.js"
+
+
+
+excluirProduto
+
 const adicionarProduto = document.querySelector("#formulario_adicionar")
 const removerProduto = document.querySelector('#formulario_remover')
 const alterarProduto = document.querySelector("#formulario_alterar")
@@ -13,6 +19,8 @@ function esconderFormulario() {
         formulario.style.display = 'none'
     })
 }
+
+
 
 adicionar.addEventListener('click', () => {
     esconderFormulario()
@@ -66,14 +74,7 @@ removerProduto.addEventListener('submit', async function (event) {
 
     const idProduto = document.querySelector('#id-produto')
 
-    await fetch(`http://localhost:3000/produtos/${idProduto.value}`, {
-        method: 'DELETE',
-        headers: {
-            'Content-Type': 'application/json',
-        }
-    })
-
-
+    excluirProduto(idProduto.value)
 
     await alert('arquivo deletado!');
 })
