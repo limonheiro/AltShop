@@ -4,7 +4,7 @@
     margin: 0px;
     padding: 0px;
     scrollbar-color: #7fbc8c transparent;
-    scrollbar-gutter: stable;
+    scrollbar-gutter: auto;
 }
 
 .products_container::-webkit-scrollbar-track {
@@ -52,6 +52,7 @@
 .describe_product {
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
     gap: 0.25rem;
     font-family: "Public Sans";
     font-size: 1.5rem;

@@ -41,7 +41,6 @@
     flex-direction: column;
     align-content: center;
     justify-content: center;
-    padding-bottom: 1rem;
 }
 
 .formulario h1{
@@ -90,6 +89,11 @@
     color: #fff;
 }
 
-#formulario_adicionar, #formulario_remover{
+.alterar:hover{
+    background-color: #ffff00;
+    color: #000;
+}
+
+#formulario_adicionar, #formulario_remover, #formulario_alterar{
     display: none;
 }

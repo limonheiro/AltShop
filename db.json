@@ -6,8 +6,8 @@
       "image": [
         "./assets/carcaça.webp"
       ],
-      "preço": 30,
-      "Quantidade": 15
+      "preço": "30",
+      "quantidade": "15"
     },
     {
       "id": 2,
@@ -15,8 +15,8 @@
       "image": [
         "./assets/megaDrive.webp"
       ],
-      "preço": 29,
-      "Quantidade": 5
+      "preço": "30",
+      "quantidade": "50"
     },
     {
       "id": 3,
@@ -24,8 +24,8 @@
       "image": [
         "./assets/Master-system.webp"
       ],
-      "preço": 25,
-      "Quantidade": 15
+      "preço": "25",
+      "quantidade": "15"
     },
     {
       "id": 4,
@@ -33,8 +33,8 @@
       "image": [
         "./assets/n64-trans.webp"
       ],
-      "preço": 364,
-      "Quantidade": 15
+      "preço": "364",
+      "quantidade": "15"
     }
   ]
 }

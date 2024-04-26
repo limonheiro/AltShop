@@ -1,0 +1,69 @@
+.carrinho_popup {
+    /* display: grid; */
+    display: none;
+    grid-template-areas:
+        "produtos"
+        "preco";
+    position: absolute;
+    width: 230px;
+    height: 40%;
+    top: 100px;
+    left: 71%;
+    border-radius: 16px 16px;
+    border: 5px solid #000;
+    /* box-shadow: inset -4px -6px #000, inset -4px -6px #000; */
+    background: #fff;
+    z-index: 2;
+    
+}
+
+.products_carrinho {
+    grid-area: produtos;
+    overflow: auto;
+}
+
+.product_carrinho {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 200px;
+    background: #ffb2ef;
+    margin: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 16px;
+    border: 5px solid #000;
+}
+
+.product_carrinho img {
+    align-self: center;
+    width: 180px;
+    margin: 0.5rem;
+    object-fit: contain;
+    filter: drop-shadow(3px 6px 0 black);
+    border-radius: 10px;
+    
+}
+
+.describe_product_popup{
+    font-family: "Public Sans";
+    font-weight: 800;
+    padding-left: 0.8rem;
+    font-size: 1rem;
+}
+
+.preco_carrinho {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    justify-content: space-between;
+    align-items: self-end;
+    padding: 0.5rem;
+
+    grid-area: preco;
+}
+
+.preco_carrinho p{
+    font-family: "Public Sans";
+    font-size: 1.5rem;
+    font-weight: 800;
+}
