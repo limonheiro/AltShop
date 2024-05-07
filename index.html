@@ -8,21 +8,25 @@
     <!-- <script src="script/formulario.js" type="module" defer></script> -->
 
     <script src="script/select_product.js" type="module" defer></script>
-    <script src="script/carinho.js" defer></script>
+    <script src="script/carrinho.js" type="module" defer></script>
     <script src="script/excluir.js" type="module" defer></script>
     <script src="script/excluir_produto.js" type="module" defer></script>
     <script src="script/main.js" type="module" defer></script>
-<!-- fim script -->
+
+    <!-- fim script -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="shortcut icon" href="assets/icon.webp" type="image/x-icon">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="../styles/formulario.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/product.css">
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/carrinho.css">
+
     <link rel="stylesheet" href="styles/media.css">
     <title>LT</title>
 </head>
@@ -32,20 +36,19 @@
         <div class="home"><a href="pages/formulario.html"><i class="icon_nav" data-lucide="menu"></i></a></div>
         <h1>ALT</h1>
         <div class="carrinho"><i class="icon_nav" data-lucide="shopping-cart"></i></div>
-        <div class="quantidade"><p>1</p></div>
+        <div class="quantidade">
+            <p>1</p>
+        </div>
     </nav>
+    <dialog class="mensagem_alerta">
+        <p>Quantidade maxima de produtos atingida</p>
+        <button class="arredondar erro" autofocus>Sair</button>
+    </dialog>
     <div class="main_container">
         <div class="carrinho_popup">
             <div class="products_carrinho">
-                <div class="product_carrinho">
-                    <img  src="assets/carcaça.webp" alt="">
-                    <div class="describe_product_popup">
-                        <p>Cartucho</p>
-                        <p>$ 30</p>
-                    </div>
-                </div>
             </div>
-            
+
             <div class="preco_carrinho">
                 <p>Total</p>
                 <p>$300</p>
@@ -53,7 +56,7 @@
         </div>
         <div class="products_container">
             <div class="product">
-                <img  src="assets/carcaça.webp" alt="">
+                <img src="assets/carcaça.webp" alt="">
                 <div class="describe_product">
                     <p>Cartucho</p>
                     <p>$ 30</p>
@@ -65,6 +68,8 @@
         </div>
     </div>
 
+    
+
     <footer>
         <p>Desenvolvido por <strong>Nicolas T.</strong></p>
         <p><strong>2024</strong></p>
@@ -74,7 +79,7 @@
     <script>
         lucide.createIcons();
     </script>
-    
+
 </body>
 
 </html>

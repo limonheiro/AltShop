@@ -1,37 +1,51 @@
-body{
-    background: #ffff00;
-    height: 100%;
+*{
+    font-family: "Public Sans";
 }
 
-.home a{
+body {
+    background: #ffff00;
+    background-image:
+        url('../assets/teste.svg');
+
+    background-repeat:
+        repeat;
+    background-position:
+        0 0;
+    height: 100%;
+    background-attachment: fixed;
+    /* background-size: 10px; */
+}
+
+
+.home a {
     text-decoration: none;
     color: #000;
 }
 
-nav{
+nav {
     background: #fff;
     height: 80px;
     width: 80%;
 }
 
-nav a{
+nav a {
     text-decoration: none;
     color: #000;
     transition-duration: 400ms;
 }
 
-nav *:hover{
+nav :nth-child(n):hover {
     transition-duration: 400ms;
     transform: translate(0.2rem, 1%);
 }
 
-h1{
+h1 {
     font-family: "Public Sans";
     font-size: 2rem;
     font-weight: 800;
 }
 
-.nav__container{
+.nav__container {
     /* min-height: 100%; */
     margin: auto;
     align-items: center;
@@ -44,12 +58,12 @@ h1{
     /* overflow:hidden; */
 }
 
-.icon_nav{
+.icon_nav {
     width: 32px;
     height: 32px;
 }
 
-.quantidade{
+.quantidade {
     font-family: "Public Sans";
     font-weight: 800;
     display: none;
@@ -64,6 +78,6 @@ h1{
     background-color: #daf5f0;
 }
 
-.quantidade p{
+.quantidade p {
     text-align: center;
 }

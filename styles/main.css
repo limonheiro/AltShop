@@ -12,3 +12,35 @@
     border: 5px solid #000;
     box-shadow: inset -4px -6px #000, inset -4px -6px #000;
 }
+dialog:backdrop {
+    background-color: salmon;
+    opacity: 0.75;
+  }
+  
+.mensagem_alerta{
+    font-family: "Public Sans";
+    font-weight: 800;
+    /* display: flex; */
+    flex-direction: column;
+    background: #fff;
+    padding: 1rem;
+    margin: auto;
+    position: fixed;
+    border-radius: 16px;
+    border: 5px solid #000;
+    gap: 1rem;
+    
+    z-index: 3;
+}
+
+.mensagem_alerta button{
+    padding: 0.25rem;
+    background: #fff;
+    margin-top: 0.5rem;
+}
+
+.erro:hover,
+.erro:focus{
+    background: #f00;
+    color: #fff;
+}

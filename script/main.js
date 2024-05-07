@@ -1,5 +1,7 @@
+import carrinhoCompra from './carrinho.js';
 import excluir from './excluir.js';
 import setProdutoCarrinho from './select_product.js';
+
 
 const produtosContainer = document.querySelector('.products_container')
 
@@ -23,7 +25,7 @@ async function carregarProdutos() {
         produtosContainer.innerHTML += `
         <div class="product" data-code=${produto.id}>
             <img  src=${produto.image} alt=""/>
-            <div class="describe_product">
+            <div class="describe_product" data-quantidade=${produto.quantidade}>
                 <p>${nome}</p>
                 <p>$ ${produto.preço}</p>
             </div>
@@ -35,8 +37,9 @@ async function carregarProdutos() {
         </div>
         `
     });
-    // setProdutoCarrinho()
+    setProdutoCarrinho()
     excluir()
+    // carrinhoCompra()
 }
 
 carregarProdutos()

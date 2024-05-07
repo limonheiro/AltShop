@@ -4,7 +4,7 @@
       "id": 1,
       "nome": "cartucho SNES",
       "image": [
-        "./assets/carcaça.webp"
+        "https://lh3.googleusercontent.com/oYOYhlSgiLyi6sBvyig9BfHTuaqobHge60hUXQAvhGEoPZmErNkKSkBXguQcCCn0l2cYnfSC4dP5KEpCADZi9qbHsu-7PKxa14Z-mA=w1920-h965-rw-sm-pa-nu-v0"
       ],
       "preço": "30",
       "quantidade": "15"
@@ -13,7 +13,7 @@
       "id": 2,
       "nome": "cartucho Mega Drive",
       "image": [
-        "./assets/megaDrive.webp"
+        "https://lh3.googleusercontent.com/WfypnPNuoC4yJs6WMiz1C-gv57jYsbXZWBSOvc_yxR9cSdMcYA3zOzVcU0qC2ILcPa_Q4IInWyg10AJySM8aH0b1UphoLcj4kSBt7kA=w1346-h965-rw-sm-pa-nu-v0"
       ],
       "preço": "30",
       "quantidade": "50"
@@ -22,7 +22,7 @@
       "id": 3,
       "nome": "cartucho Master System",
       "image": [
-        "./assets/Master-system.webp"
+        "https://lh3.googleusercontent.com/enXzBpkXxhv4yyvPFU3lrANcUMAemLV5fTX39Qmmf-A3ntEsyUH1alxMgCpqhzodj_CUwWR_SMdfTfyu_iZuqFQmmcaAm1LizppaSg=w1346-h965-rw-sm-pa-nu-v0"
       ],
       "preço": "25",
       "quantidade": "15"
@@ -31,10 +31,47 @@
       "id": 4,
       "nome": "carcaça de Nintendo 64",
       "image": [
-        "./assets/n64-trans.webp"
+        "https://lh3.googleusercontent.com/kOkdiykt2wam8VrAqhbusLFp4Bdsu_qoN2kq_W6VtinPCgz633cjandh8MmW-ZhlN6vuCmqJvQOdpmiA4vG7rn1JsWhDNMp47s7N=w1346-h965-rw-sm-pa-nu-v0"
       ],
       "preço": "364",
       "quantidade": "15"
+    },
+    {
+      "id": 5,
+      "nome": "Cartucho de Game Boy",
+      "image": [
+        "https://lh3.googleusercontent.com/RhNOypMKgCs-Ze46HKby09N1iUYRkZ_NmP1NMEkcBWWNlELT4-uvmdSwCpKGY5RkIBZvlv4QNtshbGL_O7MvOCl6vmncPeEJPgfFtA=w1346-h965-rw-sm-pa-nu-v0"
+      ],
+      "preço": "35",
+      "quantidade": "5"
+    },
+    {
+      "id": 6,
+      "nome": "Cartucho de Neo Geo",
+      "image": [
+        "https://lh3.googleusercontent.com/P2KhGx8ahP8PouQSskpmmor45lfvse-mAshvWy9JFChU-7-e8lPGBvITWr9MXMm_O1RHUCUQLJaJSmgMDgc2mhes43XJuXBR0P-oWA=w1346-h965-rw-sm-pa-nu-v0"
+      ],
+      "preço": "105",
+      "quantidade": "3"
+    },
+    {
+      "id": 7,
+      "nome": "Everdrive TurboGrafx-16",
+      "image": [
+        "https://lh3.googleusercontent.com/5yD7zkO6nxF8twrVxhsrvXlShOR8nMUx61gSllKT9CIKXAaARLGkSBX3T9R9ZIZwCMNJ1hKNKOITiHyvtVLMB99eUsCzkWomNEPqjw=w1346-h965-rw-sm-pa-nu-v0"
+      ],
+      "preço": "150",
+      "quantidade": "10"
+    },
+    {
+      "id": 8,
+      "nome": "Cartucho Nintendo 64",
+      "image": [
+        "https://lh3.googleusercontent.com/gF8g3G05Cjvdb3YR4JQFpL6cg8b5v60_ALg55JQQG0y8Zef9RLaqhIaL5a59Nqd3lLGggEgwJekzCg-VOxhJX42AHPZUKtMa5hJ3dA=w1346-h965-rw-sm-pa-nu-v0"
+      ],
+      "preço": "45",
+      "quantidade": "10"
     }
+    
   ]
 }

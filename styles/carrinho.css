@@ -8,13 +8,13 @@
     width: 230px;
     height: 40%;
     top: 100px;
-    left: 71%;
+    /* left: 71%; */
     border-radius: 16px 16px;
     border: 5px solid #000;
     /* box-shadow: inset -4px -6px #000, inset -4px -6px #000; */
     background: #fff;
-    z-index: 2;
-    
+    z-index: 3;
+    right: calc(100% / 7);
 }
 
 .products_carrinho {
@@ -27,7 +27,7 @@
     flex-direction: column;
     align-self: center;
     width: 200px;
-    background: #ffb2ef;
+    background: #fdfd96;
     margin: 0.5rem;
     padding-bottom: 0.5rem;
     border-radius: 16px;
@@ -37,6 +37,7 @@
 .product_carrinho img {
     align-self: center;
     width: 180px;
+    max-height: 100px;
     margin: 0.5rem;
     object-fit: contain;
     filter: drop-shadow(3px 6px 0 black);

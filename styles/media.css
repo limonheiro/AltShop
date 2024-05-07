@@ -2,6 +2,7 @@
     .product {
         width: 300px;
     }
+    
 }
 
 @media screen and (max-width:825px) {
@@ -65,6 +66,10 @@
         gap: 0.5rem;
         font-size: 1.4rem;
 
+    }
+
+    .mensagem_alerta{
+        left: 1vh;
     }
 
 }

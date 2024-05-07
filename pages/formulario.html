@@ -7,6 +7,7 @@
 
     <script src="../script/formulario.js" type="module" defer></script>
     <script type="module" src="../script/excluir_produto.js"></script>
+    <script type="module" src="../script/carrinho.js"></script>
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,10 +19,11 @@
     <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/header.css">
     <link rel="stylesheet" href="../styles/main.css">
-    <!-- <link rel="stylesheet" href="../styles/product.css"> -->
+    <link rel="stylesheet" href="../styles/product.css">
     <link rel="stylesheet" href="../styles/footer.css">
     <link rel="stylesheet" href="../styles/formulario.css">
     <link rel="stylesheet" href="../styles/media_formulario.css">
+    <link rel="stylesheet" href="../styles/carrinho.css">
     <title>LT</title>
 </head>
 
@@ -36,7 +38,17 @@
             <p>1</p>
         </div>
     </nav>
+  
     <div class="main_container formulario_pagina">
+        <div class="carrinho_popup">
+            <div class="products_carrinho">
+            </div>
+
+            <div class="preco_carrinho">
+                <p>Total</p>
+                <p>$300</p>
+            </div>
+        </div>
         <div class="escolha_container">
             <button class="arredondar adicionar">Adicionar</button>
             <button class="arredondar remover">Remover</button>
