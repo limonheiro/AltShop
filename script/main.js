@@ -6,7 +6,8 @@ import setProdutoCarrinho from './select_product.js';
 const produtosContainer = document.querySelector('.products_container')
 
 async function getProdutos() {
-    const produtosFetch = await fetch('http://localhost:3000/produtos')
+    // const produtosFetch = await fetch('http://localhost:3000/produtos')
+    const produtosFetch = await fetch('https://alt-shop-sage.vercel.app/api/produtos')
     const produtosFetchJson = await produtosFetch.json()
     return produtosFetchJson
 }
