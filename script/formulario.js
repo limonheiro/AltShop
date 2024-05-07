@@ -53,7 +53,7 @@ adicionarProduto.addEventListener('submit', async function (event) {
         "quantidade": quantidade.value
     }
 
-    await fetch('http://localhost:3000/produtos', {
+    await fetch('https://alt-shop-sage.vercel.app/api/produtos', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -82,7 +82,7 @@ removerProduto.addEventListener('submit', async function (event) {
 async function buscarProduto(id) {
 
     try {
-        const produto = await fetch(`http://localhost:3000/produtos/${id}`)
+        const produto = await fetch(`https://alt-shop-sage.vercel.app/api/produtos/${id}`)
         const produtoJson = await produto.json()
 
         const nome = document.getElementById("nome-alterar")
@@ -131,7 +131,7 @@ alterarProduto.addEventListener('submit', async (event) => {
         "quantidade": quantidadeAlterar
     }
 
-    await fetch(`http://localhost:3000/produtos/${inputAlterar.value}`, {
+    await fetch(`https://alt-shop-sage.vercel.app/api/produtos/${inputAlterar.value}`, {
         method: 'PATCH',
         headers: {
             'Content-Type': 'application/json',
