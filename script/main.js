@@ -7,7 +7,7 @@ const produtosContainer = document.querySelector('.products_container')
 
 async function getProdutos() {
     // const produtosFetch = await fetch('http://localhost:3000/produtos')
-    const produtosFetch = await fetch('https://my-json-server.typicode.com/limonheiro/AltShop/produtos')
+    const produtosFetch = await fetch('https://668ec034bf9912d4c92f9bbc.mockapi.io/produtos/produtos')
     const produtosFetchJson = await produtosFetch.json()
     return produtosFetchJson
 }
