@@ -45,11 +45,11 @@ adicionarProduto.addEventListener('submit', async function (event) {
     const image = document.querySelector("#image")
     const preco = document.querySelector("#preço")
     const quantidade = document.querySelector("#quantidade")
-
+    console.log(preco)
     const novoProduto = {
         'nome': nome.value,
         'image': [image.value],
-        "preço": preco.value,
+        "preco": preco.value,
         "quantidade": quantidade.value
     }
 
@@ -82,27 +82,27 @@ removerProduto.addEventListener('submit', async function (event) {
 async function buscarProduto(id) {
 
     try {
-        const produto = await fetch(`https://668ec034bf9912d4c92f9bbc.mockapi.io/produtos/produtos/${id}`)
+        const produto = await fetch(`https://668ec034bf9912d4c92f9bbc.mockapi.io/produtos/produtos?id=${id}`)
         const produtoJson = await produto.json()
-
+        console.log(produtoJson[0])
         const nome = document.getElementById("nome-alterar")
         console.log(nome.value)
         if (nome === "") {
             throw Error("Produto não encontrado")
         } else {
-            nome.value = produtoJson.nome
+            nome.value = produtoJson[0].nome
             nome.removeAttribute('disabled')
 
             const imageAlterar = document.getElementById("image-alterar")
-            imageAlterar.value = produtoJson.image
+            imageAlterar.value = produtoJson[0].image
             imageAlterar.removeAttribute('disabled')
 
             const precoAlterar = document.getElementById("preco-alterar")
-            precoAlterar.value = produtoJson.preço
+            precoAlterar.value = produtoJson[0].preco
             precoAlterar.removeAttribute('disabled')
 
             const quantidadeAlterar = document.getElementById("quantidade-alterar")
-            quantidadeAlterar.value = produtoJson.quantidade
+            quantidadeAlterar.value = produtoJson[0].quantidade
             quantidadeAlterar.removeAttribute('disabled')
         }
 
@@ -132,7 +132,7 @@ alterarProduto.addEventListener('submit', async (event) => {
     }
 
     await fetch(`https://668ec034bf9912d4c92f9bbc.mockapi.io/produtos/produtos/${inputAlterar.value}`, {
-        method: 'PATCH',
+        method: 'PUT',
         headers: {
             'Content-Type': 'application/json',
         },

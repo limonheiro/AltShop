@@ -20,14 +20,14 @@ export default async function carregando_carrinho() {
             }
             products_carrinho.innerHTML += `
             <div class="product_carrinho">
-                <img  src="${p.image}" alt="">
+                <img  src="${p[0].image}" alt="">
                 <div class="describe_product_popup">
-                    <p>${p.nome}</p>
-                    <p>$ ${p.preço}</p>
+                    <p>${p[0].nome}</p>
+                    <p>$ ${p[0].preco}</p>
                 </div>
             </div>
             `
-            const valorTotalItem = parseInt(p.preço) * quantidade
+            const valorTotalItem = Number(p[0].preco) * Number(quantidade)
 
             precoTotal += valorTotalItem
             precoHTML.childNodes[3].innerText = `$ ${precoTotal}`

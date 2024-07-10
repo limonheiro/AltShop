@@ -28,7 +28,7 @@ async function carregarProdutos() {
             <img  src=${produto.image} alt=""/>
             <div class="describe_product" data-quantidade=${produto.quantidade}>
                 <p>${nome}</p>
-                <p>$ ${produto.preço}</p>
+                <p>$ ${produto.preco}</p>
             </div>
             
             <div class="deletar_produto">
